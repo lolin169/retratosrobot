@@ -4,7 +4,7 @@
 
 C.F.G.S Desarrollo de Aplicaciones   
 Web Módulo de **Programación**  
-Autor:**MANUEL RAMOS SÁNCHEZ**
+Autor: **MANUEL RAMOS SÁNCHEZ**
  
  ---
 **Programa** para crear **retratos robot** con cadenas de caracteres. Una vez ejecutado el programa, el usuario puede crear tantos retratos como desee antes de finalizar. Los retratos **se crean eligiendo los rasgos de cada facción**.
