@@ -3,8 +3,10 @@ package retratos;
 import java.util.*;
 
 public class RetratosRobot {
-
-	public static void main(String[] args) {
+     
+	static Scanner teclado= new Scanner(System.in);
+	
+     public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		/*
 		  Programa para crear retratos robot con cadenas de caracteres. Una vez ejecutado el programa, el usuario puede crear
@@ -23,232 +25,49 @@ public class RetratosRobot {
 	  4. |  ---  |
 		 
 		 **/
-		
-		Scanner teclado= new Scanner(System.in);
-		
-		System.out.println("RETRATOS ROBOT" );
-		
-		System.out.println("Escoge la opción de cada rasgo: Pelo (1 a 4), Ojos (1 a 4), Nariz (1 a 4), Boca (1 a 4), Barbilla ( 1 o 2): ");
-		System.out.println();
-		System.out.println("     PELO                     OJOS                   NARIZ");
-		System.out.println("1. WWWWWWWWW            1. | O   O |            1. @   J   @");
-		System.out.println("2. \\\\\\//////            2. |-(. .)-|            2. {   \"   }");
-		System.out.println("3. |\"\"\"\"\"\"\"|            3. |-(o o)-|            3. [   j   ]");
-		System.out.println("4. |||||||||            4. | \\   / |            4. <   -   >");
-		System.out.println();
-		System.out.println();
-		System.out.println("      BOCA                 BARBILLA");
-		System.out.println("1. |  ===  |            1. \\_______/");
-		System.out.println("2. |   -   |            2. \\,,,,,,,/");
-		System.out.println("3. |  ___  |");
-		System.out.println("4. |  ---  |");
-		
-		String pelo1="",ojos1="",nariz1="",boca1="",barbilla1="";
-		int pelo,ojos,nariz,boca,barbilla;
 		String repetir;
-		
-		//INICIO, REPETIR O SALIR
-		
 		do {
-		
-		//PELO
-		
-		 do{
-	   
-			 System.out.println("Escoja el pelo(1 a 4)..");
-			 pelo=teclado.nextInt();
-			 
-			 switch(pelo) {
-		
-			 	case 1:
-				pelo1="WWWWWWWWW";
-				break;
-				
-			 	case 2:
-				pelo1="\\\\\\//////";
-				break;
-				
-			 	case 3:
-				pelo1="|\"\"\"\"\"\"\"|";
-				break;
-				
-			 	case 4:
-			 		
-				pelo1="|||||||||";
-				break;
-				
-			 	case 5:
-			 	case 6:
-			 	case 7:
-			 	case 8:
-			 	case 9:
-			    System.out.println("Error");
-			 		
-			    
-			    
-			 }
-		 }while(pelo==0 || pelo>4);
-		 
-		 //OJOS
-		 
-		 do{
-			   
-			 System.out.println("Dígame los ojos(1 a 4)..");
-			 ojos=teclado.nextInt();
-			 
-			 switch(ojos) {
-		
-			 	case 1:
-				ojos1="| O   O |";
-				break;
-				
-			 	case 2:
-				ojos1="|-(. .)-|";
-				break;
-				
-			 	case 3:
-				ojos1="|-(o o)-|";
-				break;
-				
-			 	case 4:
-				ojos1="| \\\\   / |";
-				break;
-				
-			 	case 5:
-			 	case 6:
-			 	case 7:
-			 	case 8:
-			 	case 9:
-			    System.out.println("Error");
-			    
-			    
-			    
-			 }
-		 }while(ojos==0 || ojos>4);
-		 
-		 //NARIZ
-		 
-		 do{
-			   
-			 System.out.println("La nariz(1 a 4)..");
-			 nariz=teclado.nextInt();
-			 
-			 switch(nariz) {
-		
-			 	case 1:
-				nariz1="@   J   @";
-				break;
-				
-			 	case 2:
-				nariz1="{   \"   }";
-				break;
-				
-			 	case 3:
-				nariz1="[   j   ]";
-				break;
-				
-			 	case 4:
-				nariz1="<   -   >";
-				break;
-				
-			 	case 5:
-			 	case 6:
-			 	case 7:
-			 	case 8:
-			 	case 9:
-			    System.out.println("Error");
-			    
-			    
-			    
-			 }
-		 }while(nariz==0 || nariz>4);
-		 
-		 //BOCA
-		 
-		 do{
-			   
-			 System.out.println("turno para la boca(1 a 4)..");
-			 boca=teclado.nextInt();
-			 
-			 switch(boca) {
-		
-			 	case 1:
-				boca1="|  ===  |";
-				break;
-				
-			 	case 2:
-				boca1="|   -   |";
-				break;
-				
-			 	case 3:
-				boca1="|  ___  |";
-				break;
-				
-			 	case 4:
-				boca1="|  ---  |";
-				break;
-				
-			 	case 5:
-			 	case 6:
-			 	case 7:
-			 	case 8:
-			 	case 9:
-			    System.out.println("Error");
-			    
-			    
-			    
-			 }
-		 }while(boca==0 || boca>4);
-		 
-		 //BARBILLA
-		 
-		 do{
-			   
-			 System.out.println("Para finalizar el retrato, la barbilla(1 a 2)..");
-			 barbilla=teclado.nextInt();
-			 
-			 switch(barbilla) {
-		
-			 	case 1:
-				barbilla1="\\_______/";
-				break;
-				
-			 	case 2:
-				barbilla1="\\,,,,,,,/";
-				break;
-				
-			 	case 3:
-			 	case 4:
-			 	case 5:
-			 	case 6:
-			 	case 7:
-			 	case 8:
-			 	case 9:
-			    System.out.println("Error");
-			    
-			    
-			    
-			 }
-		 }while(barbilla==0 || barbilla>2);
-		 
-		 System.out.println("Su retrato quedaría así...");
-		 System.out.println(pelo+" "+pelo1);
-		 System.out.println(ojos+" "+ojos1);
-		 System.out.println(nariz+" "+nariz1);
-		 System.out.println(boca+" "+boca1);
-		 System.out.println(barbilla+" "+barbilla1);
-
-	     
+			System.out.println("RETRATOS ROBOT" );
+			String[][] rasgos= { {"PELO","WWWWWWWWW","\\\\\\ /////","|\"\"\"\"\"\"\"|","|||||||||"},
+							  {"OJOS","| O   O |","|-(. .)-|","|-(o o)-|","| \\   / |"},
+							  {"NARIZ","@   J   @","{   \"   }","[   j   ]","<   -   >"},
+							  {"BOCA","|  ===  |","|   -   |","|  ___  |","|  ---  |"},
+							  {"BARBILLA","\\_______/","\\,,,,,,,/"}};
+			
+			String[]retrato=new String[rasgos.length];
+			for(int i=0;i<rasgos.length;i++) { 
+				retrato[i]=creaRetrato(rasgos[i]);
+			}
+			muestraRetrato(retrato);
+			System.out.println("Pulse R para REPETIR o S para SALIR");
+			repetir=teclado.nextLine();
+		}
+		while(repetir.equalsIgnoreCase("r")||repetir.equalsIgnoreCase("repetir")); // REPETIR O SALIR
+		System.out.println("Fin del programa.");
+	}
 	
-	 	System.out.println("Pulse R para REPETIR o S para SALIR");
-	 	repetir=teclado.next();
-	 	}
-		 while(repetir.equalsIgnoreCase("r")||repetir.equalsIgnoreCase("repetir")); {
-		 System.out.println("Fin del programa.");
-		 }
-		
-		
+	static String creaRetrato(String[]rasgos) {
+        int numero=0;
+        String rasgo="";
+        System.out.println("Escoge una opción:");
+		for(int i=1;i<rasgos.length;i++) {
+			System.out.println(i+"."+rasgos[i]);
+			}
+		System.out.print(rasgos[0]+":");
+		numero=teclado.nextInt();
 
+		while(numero<1||numero>=rasgos.length) {
+			System.out.println("Error, introduce un número dentro del rango..");
+			numero=teclado.nextInt();		
+		}
+		teclado.nextLine();//para dejar limpio el búffer del último teclado.nextInt();
+		rasgo=rasgos[numero]; 
+		return rasgo;
+	}
+	
+	static void muestraRetrato(String []retrato) {
+	for(int i=0;i<retrato.length;i++)
+		System.out.println(retrato[i]);
 	}
 
 }
